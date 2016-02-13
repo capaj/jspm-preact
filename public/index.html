@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>App</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="jspm_packages/system.js"></script>
+<script src="jspm.browser.js"></script>
+<script src="jspm.config.js"></script>
+<script>
+  System.import('app.js').then(function () {
+    console.log('ran at ', new Date())
+  })
+</script>
+</body>
+</html>

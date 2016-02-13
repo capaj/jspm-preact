@@ -1,0 +1,92 @@
+{
+  "name": "jspm-preact",
+  "version": "0.0.1",
+  "description": "jspm boilerplate",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "chokidar-socket-emitter": "^0.5.0"
+  },
+  "jspm": {
+    "name": "jspm-preact",
+    "directories": {
+      "baseURL": "public"
+    },
+    "dependencies": {
+      "preact": "npm:preact@^3.3.0",
+      "react-dom": "npm:react-dom@^0.14.7"
+    },
+    "devDependencies": {
+      "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@^6.5.2",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.2",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.5"
+    },
+    "peerDependencies": {
+      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
+      "core-js": "npm:core-js@^1.2.0",
+      "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
+      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
+      "net": "github:jspm/nodelibs-net@^0.2.0-alpha",
+      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+      "react": "npm:react@^0.14.7",
+      "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
+      "tty": "github:jspm/nodelibs-tty@^0.2.0-alpha",
+      "util": "github:jspm/nodelibs-util@^0.2.0-alpha"
+    },
+    "overrides": {
+      "npm:babel-runtime@5.8.35": {
+        "main": false,
+        "dependencies": {},
+        "optionalDependencies": {
+          "core-js": "^1.2.0"
+        }
+      },
+      "npm:fbjs@0.6.1": {
+        "dependencies": {}
+      },
+      "npm:inherits@2.0.1": {
+        "ignore": [
+          "test.js"
+        ]
+      },
+      "npm:react@0.14.7": {
+        "dependencies": {
+          "fbjs": "^0.6.1"
+        },
+        "format": "cjs",
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          }
+        },
+        "map": {
+          "fbjs/lib/ExecutionEnvironment.js": {
+            "production": "@empty"
+          },
+          "./lib/ReactDefaultPerf.js": {
+            "production": "@empty"
+          },
+          "./lib/ReactTestUtils.js": {
+            "production": "@empty"
+          }
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/jspm-preact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/capaj/jspm-preact/issues"
+  },
+  "homepage": "https://github.com/capaj/jspm-preact#readme"
+}
